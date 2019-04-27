@@ -1,0 +1,33 @@
+$ssh-keygen -t rsa -C "你的邮箱名"//创建新的ssh 在c盘uset admin 中.ssh 复制id_rsa.pub中的秘钥
+在之前检查一下是否有ssh秘钥
+git init //创建.git
+git add .//提交文件
+git status//查看状态
+git config --global user.name “用户名”
+
+git config --global user.email “注册邮箱”
+
+/创建新的分支/
+1.git init
+2.git add .
+3.git status
+4.git commit -m "修改标识名称"
+5.git branch test //创建分支test 或者git checkout -b dev //创建并切换分支dev是创建的名称 git branch //查看当前的分支
+6.git checkout test //切换分支test
+7.git remote add origin https://github.com/yangxiaoyan20/BowlingScore.git//与远程分支相关联
+8.git push origin test//将分支上传 会弹出github账户密码
+//上传成功
+把oldbranch分支名称 更换成newbranch
+01、将本地分支oldbranch切一个分支到本地
+
+     git branch -m oldbranch newbranch
+
+0 2、删除远程分支
+
+　   git push --delete origin oldbranch
+3、将本地新分支推送到远程
+
+　  git push origin newbranch
+
+//克隆github项目
+1.git clone https://github.com/yangxiaoyan20/BowlingScore.git
